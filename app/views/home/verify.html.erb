@@ -1,5 +1,7 @@
-<form action="/clue" method="get">
+<form action="/clue" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   Team Token: <input type="text" name="team_token"><br>
-  Pass: <input type="text" name="pass"><br>
+  Pass: <input type="password" name="pass"><br>
+  Score: <input type="text" name="score"><br>
   <input type="submit" value="Submit">
 </form>

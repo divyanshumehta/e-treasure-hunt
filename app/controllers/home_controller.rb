@@ -8,6 +8,7 @@ class HomeController < ApplicationController
     if diff == 1
       puts @team.last_checkpoint
       @team.last_checkpoint+=1
+      @team.score+=params[:score].to_i
       @team.save
     else
       render :cheating
