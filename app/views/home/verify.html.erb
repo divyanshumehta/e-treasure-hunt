@@ -1,7 +1,24 @@
-<form action="/clue" method="post">
-  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-  Team Token: <input type="text" name="team_token"><br>
-  Pass: <input type="password" name="pass"><br>
-  Score: <input type="text" name="score"><br>
-  <input type="submit" value="Submit">
-</form>
+<div class="container" id="float">
+<div class="container" id="content">
+  <form action="/clue" method="post">
+    <div class="form-group">
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <div class="row">
+      <div class="col">Team Number:</div>
+      <div class="col"><input class="form-control" type="text" name="team_token"></div>
+    </div>
+    <div class="row">
+      <div class="col">Secret:</div>
+      <div class="col"><input class="form-control" type="password" name="pass"></div>
+    </div>
+    <div class="row">
+      <div class="col">Score:</div>
+      <div class="col"><input class="form-control" type="text" name="score"></div>
+    </div>
+    <div class="row">
+      <div class="col text-center"><input class="btn-primary" type="submit" value="Submit"></div>
+    </div>
+  </div>
+  </form>
+</div>
+</div>

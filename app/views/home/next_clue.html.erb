@@ -1,7 +1,19 @@
-Good Team <%= @team.team_token %>
-<br/> Next clue
-<p><%= @clue.clue_text.html_safe %></p>
+<style>
+.row{
+  text-align: center;
+}
+p {
+  background-color: #fcf8e3;
+  border-radius: 5px;
+  padding: 2%;
+}
+</style>
 
-<br/>
-<br/>
-<%= link_to 'Next Checkpoint', verify_path %>
+<div class="container" id="float">
+  <div class="container" id="content">
+    <div class="row"><h2>Hey Team <%= @team.team_token %><h2></div>
+    <div class="row"><h3><u>Solve this</u></h3></div>
+    <div class="row"><p><%= @clue.clue_text.html_safe %></p></div>
+    <div class="row"><a href="/verify" class="btn-primary">Next Clue</a></div>
+  </div>
+</div>

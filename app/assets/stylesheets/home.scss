@@ -1,3 +1,58 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@media only screen and (min-width:320px)  {
+ /* smartphones, iPhone, portrait 480x320 phones */
+#float {
+  max-width: 80%;
+  margin-top: 40%;
+}
+h1 {
+  font-size: 5vw;
+}
+}
+@media only screen and (min-width:481px)  {
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media only screen and (min-width:641px)  {
+   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media only screen and (min-width:961px)  {
+ /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media only screen and (min-width:1025px) {
+ /* big landscape tablets, laptops, and desktops */
+ #float {
+   max-width: 50%;
+   margin-top: 10%;
+ }
+ h1 {
+   font-size: 2vw;
+ }
+}
+@media only screen and (min-width:1281px) {
+ /* hi-res laptops and desktops */
+}
+.form-control {
+  margin-bottom: 1.5%;
+}
+
+.btn-primary{
+  margin-top: 1.5%;
+  border-radius: 5px;
+  padding: 1% 20% 1% 20%;
+}
+
+#float {
+  // background-color: rgba(160,172,183,0.3);
+  background: #76b852;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  padding: 2%;
+  box-shadow: 2px 2px 15px #888888;
+  border-radius: 10px;
+}
+#content {
+  max-width: 60%;
+}
