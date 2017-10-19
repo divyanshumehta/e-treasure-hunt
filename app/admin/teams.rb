@@ -11,5 +11,5 @@ ActiveAdmin.register Team do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :team_token, :last_checkpoint
+permit_params :team_token, :last_checkpoint, :score
 end

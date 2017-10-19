@@ -1,5 +1,5 @@
-ActiveAdmin.register Clue do
 # See permitted parameters documentation:
+# ActiveAdmin.register Clue do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 # permit_params :list, :of, :attributes, :on, :model
@@ -11,5 +11,5 @@ ActiveAdmin.register Clue do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-permit_params :checkpoint, :pass, :clue_text
-end
+# permit_params :checkpoint, :pass, :
+# end
