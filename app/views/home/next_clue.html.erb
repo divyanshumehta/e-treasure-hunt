@@ -14,6 +14,8 @@ p {
     <div class="row"><h2>Hey Team <%= @team.team_token %><h2></div>
     <div class="row"><h3><u>Solve this</u></h3></div>
     <div class="row"><p><%= @clue.clue_text.html_safe %></p></div>
-    <div class="row"><a href="/verify" class="btn-primary">Next Clue</a></div>
+    <% if @clue != Clue.last %>
+      <div class="row"><a href="/verify" class="btn-primary">Next Clue</a></div>
+    <% end %>
   </div>
 </div>
